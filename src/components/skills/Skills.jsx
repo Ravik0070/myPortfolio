@@ -20,7 +20,7 @@ const variants = {
 
 const bagdeVariants = {
   initial: { opacity: 0, x: -500 },
-  animate: { opacity: 1, x: 0, transition: { type: "spring" , duration:1.5, delayChildren: 0.2} },
+  animate: { opacity: 1, x: 0, transition: { type: "spring" , duration:1, delayChildren: 0.2} },
 };
 const Skills = () => {
   const ref = useRef();
@@ -31,8 +31,6 @@ const Skills = () => {
       className="skills"
       variants={variants}
       initial="initial"
-      //   animate="animate"
-      //   whileInView="animate"
       animate={isInView && "animate"}
     >
       <motion.div className="textContainer" variants={variants}>

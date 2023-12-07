@@ -1,0 +1,112 @@
+.projects {
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &>h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 50px;
+        letter-spacing: 7px;
+
+        a {
+            img {
+                margin-top: 15px;
+                height: 50px;
+                width: 50px;
+                background-color: white;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .wrapper {
+        height: 90%;
+        width: 80%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 10px;
+
+        .projectContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            border: 2px solid orange;
+            border-radius: 10px;
+            padding: 0 10px;
+            gap: 10px;
+
+            .imageContainer {
+                height: 50%;
+                width: 90%;
+                overflow: hidden;
+                background-color: white;
+                padding: 0;
+                border: 2px solid #0c0c1d;
+                border-radius: 10px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .textContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                color: white;
+                background-color: orange;
+                padding: 5px 10px;
+                border-radius: 10px;
+                text-align: center;
+
+                h1 {
+                    font-size: 33px;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+
+                .buttons {
+                    display: flex;
+                    gap: 20px;
+                    margin-top: 15px;
+
+                    a {
+                        button {
+                            border: none;
+                            background-color: #0c0c1d;
+                            border: 2px solid orange;
+                            font-size: 23px;
+                            padding: 20px 20px;
+                            color: orange;
+                            border-radius: 10px;
+
+                            &:hover {
+                                background-color: orange;
+                                border: 2px solid #0c0c1d;
+                                color: #0c0c1d;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

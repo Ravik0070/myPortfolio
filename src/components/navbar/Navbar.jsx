@@ -33,22 +33,38 @@ const Navbar = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.a href="#" variants={socialIconVariants}>
+          <motion.a
+            href="https://github.com/Ravik0070?tab=repositories"
+            target="_blank"
+            variants={socialIconVariants}
+          >
             <motion.div className="imageContainer">
               <motion.img src="/github-mark.png" alt="" />
             </motion.div>
           </motion.a>
-          <motion.a href="#" variants={socialIconVariants}>
+          <motion.a
+            href="https://instagram.com/messedup8?igshid=YTQwZjQ0NmI0OA=="
+            target="_blank"
+            variants={socialIconVariants}
+          >
             <motion.div className="imageContainer">
               <motion.img src="/Instagram_icon.png" alt="" />
             </motion.div>
           </motion.a>
-          <motion.a href="#" variants={socialIconVariants}>
+          <motion.a
+            href="https://twitter.com/Ravikan36914427"
+            target="_blank"
+            variants={socialIconVariants}
+          >
             <motion.div className="imageContainer">
               <motion.img src="/Twitter.png" alt="" />
             </motion.div>
           </motion.a>
-          <motion.a href="#" variants={socialIconVariants}>
+          <motion.a
+            href="https://www.linkedin.com/in/ravi-kant-8237561b6/"
+            target="_blank"
+            variants={socialIconVariants}
+          >
             <motion.div className="imageContainer">
               <motion.img src="/linkedIn.png" alt="" />
             </motion.div>

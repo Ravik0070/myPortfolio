@@ -1,11 +1,12 @@
 @import "../../app.scss";
+
 .contact {
-    height: 100%;
     max-width: 1270px;
     margin: auto;
     display: flex;
     align-items: center;
     gap: 50px;
+    height: 100%;
 
     .textContainer {
         flex: 1;
@@ -20,6 +21,7 @@
 
         span {
             font-weight: 300;
+            font-size: 25px;
         }
     }
 
@@ -30,9 +32,8 @@
         .phoneSvg {
             stroke: orange;
             position: absolute;
-            margin: auto;
+            margin: 0 auto;
             z-index: -1;
-
         }
 
         form {
@@ -47,6 +48,7 @@
                 border: 1px solid white;
                 color: white;
                 border-radius: 5px;
+                font-size: 20px;
             }
 
             button {
@@ -54,7 +56,8 @@
                 border: none;
                 background-color: orange;
                 cursor: pointer;
-                font-weight: 500;
+                font-size: 25px;
+                font-weight: 600;
             }
         }
     }

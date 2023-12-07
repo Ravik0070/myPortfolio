@@ -4,27 +4,29 @@ import Cursor from "./components/cursor/Cursor";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
-import Projects from "./components/projects/Projects";
+import Projects from "./components/project/Projects";
 import Skills from "./components/skills/Skills";
 
 function App() {
   return (
     <div>
-      <Cursor/>
+      <Cursor />
       <section id="Homepage">
         <Navbar />
         <Hero />
       </section>
-      <section id="Skills">
+      <section>
         <Parallax type="skills" />
       </section>
-      <section>
+      <section id="Skills">
         <Skills />
       </section>
-      <section id="Projects">
-        <Parallax type="portfolio" />
+      <section>
+        <Parallax type="Projects" />
       </section>
-      <Projects />
+      <section id="Projects">
+        <Projects />
+      </section>
       <section id="Contact">
         <Contact />
       </section>
