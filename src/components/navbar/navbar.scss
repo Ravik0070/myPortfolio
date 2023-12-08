@@ -37,22 +37,12 @@
             padding: 20px;
         }
 
-        span {
-            font-weight: bold;
-
-            @include mobile {
-                display: none;
-            }
-
-            @include tablet {
-                display: none;
-            }
-        }
-
         .social {
+            width: 100%;
             display: flex;
             gap: 20px;
             overflow: visible;
+            justify-content: center;
 
             a {
                 animation: jumpIcon 1s infinite;
