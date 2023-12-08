@@ -18,7 +18,7 @@
     height: 100px;
 
     .wrapper {
-        max-width: 1270px;
+        width: 65%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -26,11 +26,13 @@
         height: 100%;
 
         @include mobile {
+            width: 100%;
             justify-content: flex-end;
             padding: 20px;
         }
 
         @include tablet {
+            width: 80%;
             justify-content: flex-end;
             padding: 20px;
         }

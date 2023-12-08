@@ -25,7 +25,10 @@ const Parallax = ({ type }) => {
           ? "What Skills do I Have ?"
           : "Some of my projects ?"}
       </motion.h1>
-      <motion.div className="mountains"></motion.div>
+      <motion.div
+        className="mountains"
+        style={{ backgroundImage: "url('./mountains.png')" }}
+      ></motion.div>
       <motion.div
         className="planets"
         style={{
@@ -35,7 +38,10 @@ const Parallax = ({ type }) => {
           })`,
         }}
       ></motion.div>
-      <motion.div style={{ x: yBg }} className="stars"></motion.div>
+      <motion.div
+        className="stars"
+        style={{ x: yBg, backgroundImage: "url('./stars.png')" }}
+      ></motion.div>
     </div>
   );
 };

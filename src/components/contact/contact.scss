@@ -89,6 +89,7 @@
 
         @include tablet {
             width: 100%;
+            align-items: start;
         }
 
         .phoneSvg {
