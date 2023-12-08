@@ -23,7 +23,7 @@ function App() {
       </section>
       <section>
         <Parallax type="Projects" />
-      </section>
+    </section>
       <section id="Projects">
         <Projects />
       </section>

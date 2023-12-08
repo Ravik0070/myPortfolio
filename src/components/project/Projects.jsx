@@ -30,7 +30,7 @@ const items = [
 const variant = {
   initial: {
     opacity: 0,
-    x: -500,
+    x: -200,
   },
   animate: {
     x: 0,
@@ -48,7 +48,7 @@ const itemVariant = {
   },
   animateleft: {
     rotate: -4,
-    scale:0.9,
+    scale: 0.9,
     transition: {
       type: "spring",
       duration: 1.5,
@@ -58,7 +58,7 @@ const itemVariant = {
   },
   animateright: {
     rotate: 4,
-    scale:0.9,
+    scale: 0.9,
     transition: {
       type: "spring",
       duration: 1.5,
@@ -78,13 +78,13 @@ const Projects = () => {
       initial="initial"
       animate={isInView && "animate"}
     >
-      <motion.h1 variants={variant}>
-        Few Works & for more &rarr;
+      <motion.div className="headingContainer" variants={variant}>
+        <motion.h1>Few Works & for more &rarr;</motion.h1>
         <a href="https://github.com/Ravik0070?tab=repositories">
           &nbsp;
           <motion.img src="./github-mark.png" alt="" />
         </a>
-      </motion.h1>
+      </motion.div>
       <motion.div className="wrapper">
         {items.map((item) => (
           <motion.div

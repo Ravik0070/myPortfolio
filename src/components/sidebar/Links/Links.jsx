@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-const Links = () => {
-  const items = ["Homepage","Skills","Projects", "Contact"];
+const Links = ({ setOpen }) => {
+  const items = ["Homepage", "Skills", "Projects", "Contact"];
   const variants = {
     open: {
       transition: {
@@ -27,7 +27,14 @@ const Links = () => {
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
-        <motion.a href={`#${item}`} key={item} variants={itemVariants} whileHover={{scale:1.1}} whileTap={{scale:0.95}}>
+        <motion.a
+          href={`#${item}`}
+          key={item}
+          variants={itemVariants}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setOpen((prev) => !prev)}
+        >
           {item}
         </motion.a>
       ))}

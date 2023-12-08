@@ -3,7 +3,7 @@ import "./skills.scss";
 import { motion, useInView } from "framer-motion";
 const variants = {
   initial: {
-    x: -500,
+    x: -200,
     y: 100,
     opacity: 0,
   },
@@ -34,11 +34,11 @@ const Skills = () => {
       animate={isInView && "animate"}
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.p>
-          I focus on learing new technologies,approaches,
+        <p>
+          I focus on learing new technologies, approaches,
           <br />
           knowledge to grow and move forward.
-        </motion.p>
+        </p>
         <hr />
       </motion.div>
       <motion.div className="titleConatiner" variants={variants}>
@@ -49,7 +49,7 @@ const Skills = () => {
       </motion.div>
       <motion.div className="badgesContainer" variants={bagdeVariants}>
         <motion.div className="imageContainer" variants={bagdeVariants}>
-          <motion.img src="./js.png" alt="" />
+          <motion.img src="./js.png" alt="" variants={bagdeVariants}/>
         </motion.div>
         <motion.div className="imageContainer" variants={bagdeVariants}>
           <motion.img src="./node.png" alt=""  variants={bagdeVariants}/>
