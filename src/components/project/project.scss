@@ -2,15 +2,17 @@
 
 @keyframes heartbeat {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
-      transform: scale(1.3);
+        transform: scale(1.3);
     }
+
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
+}
 
 .projects {
     height: 100%;
@@ -24,10 +26,14 @@
         justify-content: center;
         align-items: center;
         height: 10%;
+        overflow: visible;
 
         @include mobile {
-            height: 30%;
-            justify-content: center;
+            width: 70%;
+            margin: 0 auto;
+            margin-right: 15px;
+            height: 10%;
+            justify-content: end;
         }
 
         &>h1 {
@@ -39,13 +45,14 @@
             letter-spacing: 7px;
 
             @include mobile {
-                font-size: 20px;
+                font-size: 15px;
                 letter-spacing: 1px;
             }
 
         }
 
         a {
+
             img {
                 margin-top: 15px;
                 height: 50px;
@@ -53,11 +60,13 @@
                 background-color: white;
                 border-radius: 50%;
                 animation: heartbeat 1s infinite;
-                @include mobile{
+
+                @include mobile {
                     width: 30px;
                     height: 30px;
                 }
             }
+
             overflow: visible;
         }
 
@@ -74,12 +83,11 @@
         gap: 10px;
 
         @include mobile {
-            height: 70%;
+            display: none;
         }
 
         .projectContainer {
             display: flex;
-            display: none;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -111,7 +119,7 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-                color: white;
+                color: #0c0c1d;
                 background-color: orange;
                 padding: 5px 10px;
                 border-radius: 10px;
@@ -145,6 +153,85 @@
                                 border: 2px solid #0c0c1d;
                                 color: #0c0c1d;
                                 border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .mobile-wrapper {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 90%;
+        height: 90%;
+
+        @include mobile {
+            display: flex;
+        }
+
+        .projectContainer {
+
+            height: 53%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid orange;
+            border-radius: 10px;
+            gap: 10px;
+
+            .imageContainer {
+                width: 100%;
+                height: 40%;
+                overflow: hidden;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .textContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                color:white;
+                padding: 0 10px;
+
+                h1 {
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-size: 10px;
+                }
+
+                .buttons {
+
+                    a {
+                        button {
+
+                            font-size: 10px;
+                            padding: 5px 10px;
+                            border: 1px solid orange;
+                            border-radius: 10px;
+                            background-color: #0c0c1d;
+                            color: orange;
+
+                            &:hover {
+                                background-color: orange;
+                                border: 1px solid #0c0c1d;
+                                color: #0c0c1d;
                             }
                         }
                     }

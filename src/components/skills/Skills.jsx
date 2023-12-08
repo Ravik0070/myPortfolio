@@ -76,6 +76,9 @@ const Skills = () => {
           <motion.img src="./html5.png" alt=""  variants={bagdeVariants}/>
         </motion.div>
         <motion.div className="imageContainer" variants={bagdeVariants}>
+          <motion.img src="./CSS3.png" alt=""  variants={bagdeVariants}/>
+        </motion.div>
+        <motion.div className="imageContainer" variants={bagdeVariants}>
           <motion.img src="./mern.png" alt=""  variants={bagdeVariants}/>
         </motion.div>
         <motion.div className="imageContainer" variants={bagdeVariants}>

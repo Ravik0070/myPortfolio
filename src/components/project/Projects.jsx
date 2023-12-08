@@ -67,6 +67,20 @@ const itemVariant = {
     },
   },
 };
+const mobileVariant = {
+  initial: {
+    x: -100,
+  },
+  animate: {
+    x: 0,
+    transition: {
+      type: "spring",
+      duration: 1.5,
+      delay: 1,
+      staggerChilden: 0.1,
+    },
+  },
+};
 const Projects = () => {
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
@@ -99,6 +113,36 @@ const Projects = () => {
                 ? "animateright"
                 : "initial"
             }
+          >
+            <motion.div className="imageContainer">
+              <img src={item.img} alt="" />
+            </motion.div>
+            <motion.div className="textContainer">
+              <motion.h1>{item.title}</motion.h1>
+              <p>{item.desc}</p>
+              <motion.div className="buttons">
+                <a href={item.gitlink}>
+                  <button>Go to repo</button>
+                </a>
+                {item.link && (
+                  <a href={item.link}>
+                    <button>See Demo</button>
+                  </a>
+                )}
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        ))}
+      </motion.div>
+
+      <motion.div className="mobile-wrapper">
+        {items.map((item) => (
+          <motion.div
+            className="projectContainer"
+            key={item.id}
+            variants={mobileVariant}
+            initial="initial"
+            animate="animate"
           >
             <motion.div className="imageContainer">
               <img src={item.img} alt="" />

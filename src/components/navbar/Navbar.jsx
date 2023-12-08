@@ -57,7 +57,7 @@ const Navbar = () => {
             variants={socialIconVariants}
           >
             <motion.div className="imageContainer">
-              <motion.img src="/Twitter.png" alt="" />
+              <motion.img src="/twitter2.png" alt="" style={{transform:"scale(1.3)"}} />
             </motion.div>
           </motion.a>
           <motion.a
