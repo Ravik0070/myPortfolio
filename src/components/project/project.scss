@@ -36,6 +36,14 @@
             justify-content: end;
         }
 
+        @include tablet {
+            width: 70%;
+            margin: 0 auto;
+            margin-right: 15px;
+            height: 10%;
+            justify-content: end;
+        }
+
         &>h1 {
             display: flex;
             align-items: center;
@@ -45,6 +53,11 @@
             letter-spacing: 7px;
 
             @include mobile {
+                font-size: 15px;
+                letter-spacing: 1px;
+            }
+
+            @include tablet {
                 font-size: 15px;
                 letter-spacing: 1px;
             }
@@ -62,6 +75,11 @@
                 animation: heartbeat 1s infinite;
 
                 @include mobile {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                @include tablet {
                     width: 30px;
                     height: 30px;
                 }
@@ -83,6 +101,10 @@
         gap: 10px;
 
         @include mobile {
+            display: none;
+        }
+
+        @include tablet {
             display: none;
         }
 
@@ -126,11 +148,11 @@
                 text-align: center;
 
                 h1 {
-                    font-size: 33px;
+                    font-size: 30px;
                 }
 
                 p {
-                    font-size: 20px;
+                    font-size: 17px;
                 }
 
                 .buttons {
@@ -176,8 +198,11 @@
             display: flex;
         }
 
-        .projectContainer {
+        @include tablet {
+            display: flex;
+        }
 
+        .projectContainer {
             height: 53%;
             width: 100%;
             display: flex;
@@ -205,7 +230,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-                color:white;
+                color: white;
                 padding: 0 10px;
 
                 h1 {

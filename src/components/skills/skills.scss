@@ -18,6 +18,10 @@
             width: 70%;
         }
 
+        @include tablet {
+            width: 70%;
+        }
+
         p {
             font-weight: 200;
             font-size: 20px;
@@ -25,6 +29,11 @@
             text-align: right;
 
             @include mobile {
+                font-size: 13px;
+                font-weight: 300;
+            }
+
+            @include tablet {
                 font-size: 13px;
                 font-weight: 300;
             }
@@ -36,6 +45,10 @@
             border-top: 0.5px solid gray;
 
             @include mobile {
+                width: 100px;
+            }
+
+            @include tablet {
                 width: 100px;
             }
         }
@@ -50,9 +63,17 @@
         @include mobile{
             flex: 1;
         }
+
+        @include tablet{
+            flex: 1;
+        }
         h1 {
             font-size: 53px;
             @include mobile{
+                font-size: 32px;
+            }
+
+            @include tablet{
                 font-size: 32px;
             }
         }
@@ -65,8 +86,14 @@
         flex-wrap: wrap;
         align-self: center;
         width: 80%;
+        overflow: visible;
         
         @include mobile{
+            justify-content: center;
+            width: 100%;
+        }
+
+        @include tablet{
             justify-content: center;
             width: 100%;
         }
@@ -81,6 +108,13 @@
             @include mobile{
                 width:80px;
                 height: 80px;
+                margin: 0;
+                flex: 1 0 21%;
+            }
+
+            @include tablet{
+                width:90px;
+                height: 90px;
                 margin: 0;
             }
 

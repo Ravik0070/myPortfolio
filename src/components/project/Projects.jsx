@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "MERN E-Commerce Store app(AccessoryEmpoium) ",
+    title: "MERN E-Commerce App. (Emporium)",
     img: "./accessoryemporium.png",
     desc: "This project is shows how to create a MERN stack project, where React is used for the client side i.e. UI , for the backend Node & Express API is used along with the JWT authentication for login/register. Mongo is used as database.",
     gitlink: "https://github.com/Ravik0070/AccessoryEmpoium",
